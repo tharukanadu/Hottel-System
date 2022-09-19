@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="610.0" prefWidth="1232.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
    <children>
       <ImageView fitHeight="610.0" fitWidth="1232.0" layoutY="3.0" opacity="0.39" pickOnBounds="true">
@@ -33,12 +32,12 @@
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="52.0" layoutY="353.0" text="Address">
+      <Label layoutX="52.0" layoutY="353.0" text="Telephone number">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="286.0" text="Telephone Number">
+      <Label layoutX="50.0" layoutY="286.0" text="Address">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
@@ -48,13 +47,14 @@
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="256.0" layoutY="114.0" prefHeight="25.0" prefWidth="282.0" />
-      <TextField layoutX="256.0" layoutY="208.0" prefHeight="25.0" prefWidth="282.0" />
-      <TextField layoutX="256.0" layoutY="283.0" prefHeight="25.0" prefWidth="282.0" />
-      <TextField layoutX="256.0" layoutY="350.0" prefHeight="25.0" prefWidth="282.0" />
-      <TextField layoutX="254.0" layoutY="432.0" prefHeight="25.0" prefWidth="282.0" />
-      <Button layoutX="40.0" layoutY="507.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Add" />
-      <Button layoutX="431.0" layoutY="507.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Delete" />
-      <Button layoutX="240.0" layoutY="507.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Update" />
+      <TextField fx:id="textCustomerId" layoutX="256.0" layoutY="114.0" prefHeight="25.0" prefWidth="282.0" />
+      <TextField fx:id="textCustomerName" layoutX="256.0" layoutY="208.0" prefHeight="25.0" prefWidth="282.0" />
+      <TextField fx:id="textAddress" layoutX="256.0" layoutY="283.0" prefHeight="25.0" prefWidth="282.0" />
+      <TextField fx:id="textCustomerNumber" layoutX="256.0" layoutY="350.0" prefHeight="25.0" prefWidth="282.0" />
+      <TextField fx:id="textCustomerEmail" layoutX="254.0" layoutY="432.0" prefHeight="25.0" prefWidth="282.0" />
+      <Button layoutX="40.0" layoutY="507.0" mnemonicParsing="false" onAction="#CustomerSaveOnAction" prefHeight="25.0" prefWidth="107.0" text="Add" />
+      <Button layoutX="431.0" layoutY="507.0" mnemonicParsing="false" onAction="#CustomerDeleteOnAction" prefHeight="25.0" prefWidth="107.0" text="Delete" />
+      <Button layoutX="240.0" layoutY="507.0" mnemonicParsing="false" onAction="#CustomerUpdateOnAction" prefHeight="25.0" prefWidth="107.0" text="Update" />
+      <Button layoutX="204.0" layoutY="548.0" mnemonicParsing="false" onAction="#SearchOnAction" prefHeight="25.0" prefWidth="127.0" text="Search" />
    </children>
 </AnchorPane>

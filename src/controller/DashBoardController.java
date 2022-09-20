@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class DashBoardController {
     public void NextPageOnAction(ActionEvent actionEvent) throws IOException {
-        Parent load= FXMLLoader.load(getClass().getResource("../ui/Customer.fxml"));
+        Parent load= FXMLLoader.load(getClass().getResource("../ui/Form.fxml"));
         Scene scene = new Scene(load);
         Stage stage = new Stage();
         stage.setScene(scene);

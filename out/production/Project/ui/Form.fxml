@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="MainAnchorPane" prefHeight="692.0" prefWidth="1408.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FormController">
    <children>
       <ImageView fitHeight="692.0" fitWidth="1408.0" layoutX="-3.0" pickOnBounds="true">
@@ -17,7 +16,7 @@
             <Image url="@../assets/biueOcean.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="7.0" layoutY="180.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #00FFFF;" text="Rooms">
+      <Button layoutX="7.0" layoutY="180.0" mnemonicParsing="false" onAction="#RoomOnAction" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #00FFFF;" text="Rooms">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -47,7 +46,7 @@
          </font>
       </Label>
       <Separator layoutX="546.0" layoutY="49.0" prefHeight="6.0" prefWidth="259.0" />
-      <Button layoutX="7.0" layoutY="67.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #FA8072;" text="Customer">
+      <Button layoutX="7.0" layoutY="67.0" mnemonicParsing="false" onAction="#CustomerOnAction" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #FA8072;" text="Customer">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

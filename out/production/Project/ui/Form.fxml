@@ -24,12 +24,12 @@
             <Font name="Bodoni MT Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="289.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #80FF00;" text="Meal Package">
+      <Button layoutX="7.0" layoutY="289.0" mnemonicParsing="false" onAction="#MealPackageOnAction" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #80FF00;" text="Meal Package">
          <font>
             <Font name="Bodoni MT Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="489.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #FD3#FFBCD9F92;" text="Resever a Room">
+      <Button layoutX="7.0" layoutY="489.0" mnemonicParsing="false" onAction="#ReseverARroomOnAction" prefHeight="43.0" prefWidth="165.0" style="-fx-background-color: #FD3#FFBCD9F92;" text="Resever a Room">
          <font>
             <Font name="Bodoni MT Bold" size="18.0" />
          </font>

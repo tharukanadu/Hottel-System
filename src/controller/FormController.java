@@ -16,18 +16,36 @@ public class FormController {
     public AnchorPane SecondAnchorPane;
 
     public void CustomerOnAction(ActionEvent actionEvent) throws IOException {
-        Parent load = FXMLLoader.load(getClass().getResource("../ui/Customer.fxml"));
-        Scene scene = new Scene(load);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/Customer.fxml"));
+        Parent load = loader.load();
+        SecondAnchorPane.getChildren().clear();
+        SecondAnchorPane.getChildren().add(load);
+
+
     }
 
     public void RoomOnAction(ActionEvent actionEvent) throws IOException {
-        Parent load = FXMLLoader.load(getClass().getResource("../ui/Rooms.fxml"));
-        Scene scene = new Scene(load);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/Rooms.fxml"));
+        Parent load = loader.load();
+        SecondAnchorPane.getChildren().clear();
+        SecondAnchorPane.getChildren().add(load);
+
+
+    }
+
+    public void MealPackageOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/MealPackage.fxml"));
+        Parent load = loader.load();
+        SecondAnchorPane.getChildren().clear();
+        SecondAnchorPane.getChildren().add(load);
+
+    }
+
+    public void ReseverARroomOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/ReseverRoom.fxml"));
+        Parent load = loader.load();
+        SecondAnchorPane.getChildren().clear();
+        SecondAnchorPane.getChildren().add(load);
+
     }
 }

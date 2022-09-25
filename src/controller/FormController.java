@@ -20,8 +20,7 @@ public class FormController {
         Parent load = loader.load();
         SecondAnchorPane.getChildren().clear();
         SecondAnchorPane.getChildren().add(load);
-
-
+        
     }
 
     public void RoomOnAction(ActionEvent actionEvent) throws IOException {

@@ -10,6 +10,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="610.0" prefWidth="1232.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
@@ -19,33 +20,35 @@
             <Image url="@../assets/customer.png" />
          </image>
       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="51.0" layoutX="548.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" width="234.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="399.0" layoutY="94.0" opacity="0.88" stroke="WHITE" strokeType="INSIDE" width="660.0" />
       <Label layoutX="569.0" layoutY="14.0" text="Customer Form">
          <font>
             <Font name="Stencil" size="25.0" />
          </font>
       </Label>
       <Separator layoutX="567.0" layoutY="44.0" prefWidth="200.0" />
-      <Label layoutX="60.0" layoutY="117.0" text="Customer ID">
+      <Label layoutX="74.0" layoutY="117.0" text="Customer ID">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="211.0" text="Customer Name">
+      <Label layoutX="70.0" layoutY="206.0" text="Customer Name">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="52.0" layoutY="353.0" text="Telephone number">
+      <Label layoutX="65.0" layoutY="353.0" text="Telephone number">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="286.0" text="Address">
+      <Label layoutX="68.0" layoutY="286.0" text="Address">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="55.0" layoutY="435.0" text="Email">
+      <Label layoutX="75.0" layoutY="435.0" text="Email">
          <font>
             <Font name="Trebuchet MS" size="15.0" />
          </font>
